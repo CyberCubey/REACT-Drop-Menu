@@ -1,0 +1,51 @@
+.nav {
+  position: relative;
+  background-color: #222;
+  padding: 1rem;
+}
+
+
+.toggle {
+  background: none;
+  border: 1px solid white;
+  color: white;
+
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+// mobile stuff
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+
+  .menu.open {
+    display: flex;
+  }
+}
+
