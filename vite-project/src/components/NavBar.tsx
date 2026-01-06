@@ -3,14 +3,22 @@ import styles from "./NavBar.module.scss";
 export function NavBar() {
   return (
 
-    <nav className={styles.nav}>
-
+    <nav className={styles.navStyle}>
       <ul className={styles.list}>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <li className={styles.linkStyle}>
+        <a href="#">Link 1</a>
+    </li>
 
+      <li className={styles.linkStyle}>
+        <a href="#">Link 2</a>
+      </li>
+      <li className={styles.linkStyle}>
+        <a href="#">Link 3</a>
+      </li>
+
+      </ul>
     </nav>
+
   );
 }
+
